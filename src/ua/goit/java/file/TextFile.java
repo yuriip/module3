@@ -1,7 +1,6 @@
 package ua.goit.java.file;
 
 public class TextFile extends File {
-
     public TextFile(String name, String format) {
         super(name, format);
     }

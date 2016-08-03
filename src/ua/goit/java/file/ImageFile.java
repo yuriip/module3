@@ -1,8 +1,6 @@
 package ua.goit.java.file;
 
 public class ImageFile extends File {
-
-
     public ImageFile(String name, String format) {
         super(name, format);
     }

@@ -30,11 +30,11 @@ public abstract class File {
         return size;
     }
 
-    public void write(){
+    public void write() {
         System.out.println("Записать файл");
     }
 
-    public void read(){
+    public void read() {
         System.out.println("Прочитать файл");
     }
 

@@ -1,7 +1,6 @@
 package ua.goit.java.file;
 
 public class AudioFile extends File {
-
     public AudioFile(String name, String format) {
         super(name, format);
     }
