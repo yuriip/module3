@@ -2,6 +2,10 @@ package ua.goit.java;
 
 import ua.goit.java.file.*;
 import ua.goit.java.flower.*;
+import ua.goit.java.music.Guitar;
+import ua.goit.java.music.MusicalShop;
+import ua.goit.java.music.Piano;
+import ua.goit.java.music.Trumpet;
 
 public class Main {
 
@@ -9,6 +13,7 @@ public class Main {
         processFiles();
         processFlowers();
         processBush();
+        processMusicalShop();
     }
 
     private static void processFiles() {
@@ -39,5 +44,18 @@ public class Main {
         roseBush.addFlower(new RoseFlower("красный"));
 
         System.out.println(roseBush.getName() + ". Количество цветов:" + roseBush.getNumFlowers());
+    }
+
+    private static void processMusicalShop(){
+        MusicalShop musicalShop = new MusicalShop("Все для музыки");
+
+        musicalShop.addMusicalInstrument(new Guitar("Электро гитара"));
+        musicalShop.addMusicalInstrument(new Guitar("Акустическая гитара"));
+        musicalShop.addMusicalInstrument(new Piano("Классическое фортепианино"));
+        musicalShop.addMusicalInstrument(new Trumpet("Труба"));
+
+        System.out.println("Магазин \"" + musicalShop.getName() + "\"");
+        System.out.println("Каталог музыкальных инструментов:");
+        musicalShop.listMusicalInstrument();
     }
 }
