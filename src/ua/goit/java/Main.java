@@ -25,5 +25,14 @@ public class Main {
         mixedBouquet.addFlower(new TulipFlower("Тюльпан", "розовый"));
 
         mixedBouquet.listFlowers();
+
+        System.out.println("----------");
+
+        RoseBush roseBush = new RoseBush("Куст розовый, обыкновенный");
+        roseBush.addFlower(new RoseFlower("красный"));
+        roseBush.addFlower(new RoseFlower("красный"));
+        roseBush.addFlower(new RoseFlower("красный"));
+
+        System.out.println(roseBush.getName() + ". Количество цветов:" + roseBush.getNumFlower());
     }
 }

@@ -1,6 +1,10 @@
 package ua.goit.java.flowers;
 
 public class RoseFlower extends Flower {
+    public RoseFlower(String color) {
+        super(color);
+    }
+
     public RoseFlower(String name, String color) {
         super(name, color);
     }

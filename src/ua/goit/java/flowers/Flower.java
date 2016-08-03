@@ -4,6 +4,10 @@ public abstract class Flower {
     private String name;
     private String color;
 
+    public Flower(String color) {
+        this.color = color;
+    }
+
     public Flower(String name, String color) {
         this.name = name;
         this.color = color;
