@@ -4,15 +4,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Bouquet {
-    private String name;
-    private Flower flower;
-    private int numFlower;
-    private List<Flower> bouquet;
+    private final static int maxNumFlowers = 5;
 
+    private String name;
+    private int numFlowers;
+    private List<Flower> bouquet;
 
     public Bouquet(String name, Flower flower) {
         this.name = name;
-        bouquet = new ArrayList<>(5);
+        bouquet = new ArrayList<>(maxNumFlowers);
         bouquet.add(flower);
     }
 
@@ -25,13 +25,11 @@ public class Bouquet {
     }
 
     public Flower getFlower(int index) {
-        flower = bouquet.get(index);
-        return flower;
+        return bouquet.get(index);
     }
 
-    public int getNumFlower() {
-        numFlower = bouquet.size();
-        return numFlower;
+    public int getNumFlowers() {
+        return bouquet.size();
     }
 
     public void addFlower(Flower flower) {

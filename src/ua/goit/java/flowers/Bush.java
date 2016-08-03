@@ -6,7 +6,7 @@ import java.util.List;
 public abstract class Bush<T> {
     private String name;
     private T flower;
-    private int numFlower;
+    private int numFlowers;
     protected List<T> bush;
 
     public Bush(String name) {
@@ -27,9 +27,9 @@ public abstract class Bush<T> {
         return flower;
     }
 
-    public int getNumFlower() {
-        numFlower = bush.size();
-        return numFlower;
+    public int getNumFlowers() {
+        numFlowers = bush.size();
+        return numFlowers;
     }
 
     public void addFlower(T flower) {

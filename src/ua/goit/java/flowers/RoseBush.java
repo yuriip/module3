@@ -3,9 +3,11 @@ package ua.goit.java.flowers;
 import java.util.ArrayList;
 
 public class RoseBush extends Bush {
+    private final static int maxNumFlowers = 3;
+
     public RoseBush(String name) {
         super(name);
-        super.bush = new ArrayList<RoseFlower>(3);
+        bush = new ArrayList<RoseFlower>(maxNumFlowers);
     }
 
     @Override

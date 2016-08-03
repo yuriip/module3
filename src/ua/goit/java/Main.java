@@ -6,7 +6,12 @@ import ua.goit.java.flowers.*;
 public class Main {
 
     public static void main(String[] args) {
+        processFiles();
+        processFlowers();
+        processBush();
+    }
 
+    private static void processFiles() {
         Directory dir = new Directory("mydir");
 
         dir.addFile(new TextFile("readme", "txt"));
@@ -15,9 +20,9 @@ public class Main {
         dir.addFile(new ImageFile("sun", "jpeg"));
 
         dir.listFiles();
+    }
 
-        System.out.println("----------");
-
+    private static void processFlowers() {
         Bouquet mixedBouquet = new Bouquet("Букет с разными цветами", new AstraFlower("Астра", "оранжевая"));
         mixedBouquet.addFlower(new DaisyFlower("Ромашка", "белая"));
         mixedBouquet.addFlower(new RoseFlower("Роза", "красная"));
@@ -25,14 +30,14 @@ public class Main {
         mixedBouquet.addFlower(new TulipFlower("Тюльпан", "розовый"));
 
         mixedBouquet.listFlowers();
+    }
 
-        System.out.println("----------");
-
+    private static void processBush() {
         RoseBush roseBush = new RoseBush("Куст розовый, обыкновенный");
         roseBush.addFlower(new RoseFlower("красный"));
         roseBush.addFlower(new RoseFlower("красный"));
         roseBush.addFlower(new RoseFlower("красный"));
 
-        System.out.println(roseBush.getName() + ". Количество цветов:" + roseBush.getNumFlower());
+        System.out.println(roseBush.getName() + ". Количество цветов:" + roseBush.getNumFlowers());
     }
 }
