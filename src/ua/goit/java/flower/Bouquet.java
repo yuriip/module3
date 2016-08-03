@@ -1,10 +1,10 @@
-package ua.goit.java.flowers;
+package ua.goit.java.flower;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class Bouquet {
-    private final static int maxNumFlowers = 5;
+    private final static int MAX_NUM_FLOWERS = 5;
 
     private String name;
     private int numFlowers;
@@ -12,7 +12,7 @@ public class Bouquet {
 
     public Bouquet(String name, Flower flower) {
         this.name = name;
-        bouquet = new ArrayList<>(maxNumFlowers);
+        bouquet = new ArrayList<>(MAX_NUM_FLOWERS);
         bouquet.add(flower);
     }
 

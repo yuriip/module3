@@ -1,4 +1,4 @@
-package ua.goit.java.flowers;
+package ua.goit.java.flower;
 
 import java.util.ArrayList;
 import java.util.List;

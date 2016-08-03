@@ -1,4 +1,4 @@
-package ua.goit.java.flowers;
+package ua.goit.java.flower;
 
 public abstract class Flower {
     private String name;

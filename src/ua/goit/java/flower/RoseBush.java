@@ -1,13 +1,13 @@
-package ua.goit.java.flowers;
+package ua.goit.java.flower;
 
 import java.util.ArrayList;
 
 public class RoseBush extends Bush {
-    private final static int maxNumFlowers = 3;
+    private final static int MAX_NUM_FLOWERS = 3;
 
     public RoseBush(String name) {
         super(name);
-        bush = new ArrayList<RoseFlower>(maxNumFlowers);
+        bush = new ArrayList<RoseFlower>(MAX_NUM_FLOWERS);
     }
 
     @Override

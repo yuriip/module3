@@ -1,7 +1,7 @@
 package ua.goit.java;
 
 import ua.goit.java.file.*;
-import ua.goit.java.flowers.*;
+import ua.goit.java.flower.*;
 
 public class Main {
 

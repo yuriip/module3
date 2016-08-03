@@ -1,4 +1,4 @@
-package ua.goit.java.flowers;
+package ua.goit.java.flower;
 
 public class RoseFlower extends Flower {
     public RoseFlower(String color) {
