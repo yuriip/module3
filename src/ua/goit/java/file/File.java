@@ -1,12 +1,9 @@
-package ua.goit.java.task1;
+package ua.goit.java.file;
 
-public class File {
+public abstract class File {
     private String name;
     private String format;
     private long size;
-
-    public File() {
-    }
 
     public File(String name, String format) {
         this.name = name;
@@ -32,4 +29,16 @@ public class File {
     public long getSize() {
         return size;
     }
+
+    public void write(){
+        System.out.println("Записать файл");
+    }
+
+    public void read(){
+        System.out.println("Прочитать файл");
+    }
+
+    public abstract String getAttributes();
+
+    public abstract boolean isBinary();
 }

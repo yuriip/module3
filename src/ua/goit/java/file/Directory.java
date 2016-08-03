@@ -1,16 +1,15 @@
-package ua.goit.java.task1;
+package ua.goit.java.file;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Directory {
     private String name;
-    private ArrayList<File> files;
-
-    public Directory() {
-    }
+    private List<File> files;
 
     public Directory(String name) {
         this.name = name;
+        files = new ArrayList<>();
     }
 
     public String getName() {
@@ -21,7 +20,7 @@ public class Directory {
         this.name = name;
     }
 
-    public ArrayList<File> getFiles() {
+    public List<File> getFiles() {
         return files;
     }
 
@@ -30,9 +29,6 @@ public class Directory {
     }
 
     public void addFile(File file) {
-        if (files == null) {
-            files = new ArrayList<>();
-        }
         files.add(file);
     }
 
